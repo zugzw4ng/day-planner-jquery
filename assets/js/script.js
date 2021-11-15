@@ -14,6 +14,23 @@ function colorCodeBlocks() {
     $(".inputField").each(function () {
     const currentHour = moment().format("H")
     const blockHour = parseInt($(this).attr("id"))
+
+    if (blockHour < currentHour) {
+        $(this).addClass("past");
+        $(this).removeClass("present");
+        $(this).removeClass("future");
+    }
+    else if (blockHour == currentHour) {
+        $(this).addClass("present");
+        $(this).removeClass("past");
+        $(this).removeClass("future");
+    }
+    else {
+        $(this).addClass("future");
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+    }
+})
 }
 // save button functionality and localstorage save
 
