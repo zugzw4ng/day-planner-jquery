@@ -40,3 +40,6 @@ $(".saveButton").on("click", function () {
     localStorage.setItem(timeID, userInput);
 })
 // function calls
+
+getSavedInput();
+colorCodeBlocks();
