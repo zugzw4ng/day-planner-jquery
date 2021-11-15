@@ -1,4 +1,4 @@
-Day Planner (with JQuery)
+# Day Planner (with JQuery)
 
 ## Description
   I created a simple day planner program using starter HTML and CSS code. I applied Bootstrap, JQuery, and Moment.js to the program to support the structure and styling, as well as functionality regarding the current time and date and color coding the time blocks. I learned how to dynamically create and modify HTML via JS functions and JQuery documentation.
